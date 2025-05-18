@@ -77,12 +77,6 @@ Before running the project, make sure to configure the following in your server.
 
 ---
 
-## 📸 Screenshots
-
-(Add relevant screenshots: login page, dashboard, chat, assessment interface, etc.)
-
----
-
 ## ✅ Future Enhancements
 
 - Video therapy integration using WebRTC
