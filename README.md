@@ -47,20 +47,28 @@ Before running the project, make sure to configure the following in your server.
 ### Backend Setup
 
 1. Clone the repository
+   ```bash
    git clone https://github.com/your-username/healing-haven.git
    cd healing-haven/server
+   ```
 
-2. Install dependencies
+3. Install dependencies
+   ```bash
    npm install
+   ```
 
-3. Create a .env file or set environment variables:
+5. Create a .env file or set environment variables:
+   ```bash
    EMAIL_USER=your_email@example.com
    EMAIL_PASS=your_app_password
    JWT_SECRET=your_secret_key
    MONGO_URI=mongodb+srv://<user>:<password>@cluster.mongodb.net/db
+   ```
 
-4. Start the backend server
+7. Start the backend server
+   ```bash
    node server.js
+   ```
 
 ---
 
