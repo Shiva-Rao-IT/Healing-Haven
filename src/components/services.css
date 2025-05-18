@@ -1,0 +1,379 @@
+/* General Page Styling */
+.services-container {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #ffffff, #f3e6d4);
+}
+
+.services-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.services-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #0073e6;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.services-description {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Service Card */
+.service-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 115, 230, 0.1);
+  transition: left 0.3s ease-in-out;
+}
+
+.service-card:hover::before {
+  left: 0;
+}
+
+/* Service Icon */
+.service-icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.2);
+}
+
+/* Service Title */
+.service-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 15px 0 10px;
+  color: #333;
+}
+
+/* Service Description */
+.service-description {
+  font-size: 16px;
+  color: #666;
+  transition: color 0.3s ease-in-out;
+}
+
+.service-card:hover .service-description {
+  color: #0073e6;
+}
+
+/* Overlay background when form is open */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+
+/* Popup Form */
+.popup-form {
+  background: white;
+  padding: 30px;
+  width: 90%;
+  max-width: 478px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.3s ease-in-out;
+
+  /* Make it responsive and scrollable if needed */
+  max-height: 102vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* Smooth animation for popup */
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Title Styling */
+.popup-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
+}
+
+/* Paragraphs */
+.popup-form p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Form Input Fields */
+.popup-form input,
+.popup-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.popup-form select {
+  background-color: #fff;
+}
+
+/* Buttons */
+.popup-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.popup-form button:active {
+  transform: scale(0.97);
+}
+
+.popup-form button[type="submit"],
+.popup-form button.submit-appointment {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.popup-form button[type="submit"]:hover,
+.popup-form button.submit-appointment:hover {
+  background-color: #45a049;
+}
+
+.popup-form .close-btn {
+  background-color: #d9534f;
+  color: white;
+}
+
+.popup-form .close-btn:hover {
+  background-color: #c9302c;
+}
+
+/* Learn More Button */
+.learn-more {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #0073e6;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.learn-more:hover {
+  background: #005bb5;
+}
+
+/* Payment Section */
+.payment-card-box {
+  background: linear-gradient(to bottom right, #fefefe, #e6f0ff);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.payment-card-box input {
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 1px;
+}
+
+.payment-card-box input:focus {
+  border-color: #0073e6;
+  box-shadow: 0 0 5px rgba(0, 115, 230, 0.3);
+  transition: 0.3s ease-in-out;
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.payment-options label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f1f9ff;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cce5ff;
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.payment-options input[type="radio"] {
+  accent-color: #0073e6;
+}
+
+/* Self-Assessment Section Styles */
+.popup-form {
+  background-color: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 10px;
+  outline: none;
+  position: relative;
+}
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.popup-form p {
+  margin: 15px 0 10px;
+  font-weight: 500;
+}
+
+.popup-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.popup-form label {
+  cursor: pointer;
+}
+
+.popup-form input[type="radio"] {
+  accent-color: #3f51b5;
+}
+
+/* Horizontal layout for radio buttons */
+.question-options {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.submit-appointment {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.submit-appointment:hover {
+  background-color: #45a049;
+}
+
+.close-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.close-btn:hover {
+  background-color: #e53935;
+}
+
+/* Question container spacing */
+.popup-form .question-container {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+

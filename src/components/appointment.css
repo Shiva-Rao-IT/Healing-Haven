@@ -1,0 +1,153 @@
+/* Appointments Page Container */
+.appointments-page {
+  padding: 2rem;
+  font-family: 'Playfair Display', serif;
+  min-height: 100vh;
+}
+
+/* Service Group Container */
+.service-group {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.service-group:hover {
+  transform: translateY(-4px);
+}
+
+/* Service Title */
+.service-group h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #222;
+  font-weight: 600;
+  border-left: 6px solid #fa5b5b;
+  padding-left: 1rem;
+}
+
+/* Appointment Table */
+.appointment-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-top: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+/* Table Header */
+.appointment-table th {
+  background-color: #ff7675;
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Table Cells */
+.appointment-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Zebra Striping */
+.appointment-table tr:nth-child(even) {
+  background-color: #fdfdfd;
+}
+
+/* Last Row Border Fix */
+.appointment-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Cancel Button */
+.cancel-btn {
+  background-color: #ff6b6b;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cancel-btn:hover {
+  background-color: #e55050;
+}
+
+/* Join Meeting Button */
+.join-btn {
+  background-color: #fa5b5b;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.join-btn:hover {
+  background-color: #03b300;
+}
+
+/* Jitsi Meeting Container */
+.jitsi-container {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  height: 500px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .appointment-table th,
+  .appointment-table td {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .service-group h3 {
+    font-size: 1.4rem;
+  }
+
+  .jitsi-container {
+    height: 350px;
+  }
+
+  .join-btn,
+  .cancel-btn {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+/* Hide old card layout */
+.appointment-card {
+  display: none !important;
+}
+
+.expired-text {
+  color: red;
+  font-weight: bold;
+}
+
+.upcoming-text {
+  color: green;
+  font-weight: bold;
+}
+
+  
+
