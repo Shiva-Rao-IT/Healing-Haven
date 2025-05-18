@@ -47,7 +47,7 @@ Before running the project, make sure to configure the following in your server.
 ### Backend Setup
 
 1. Clone the repository
-   git clone https://github.com/your-username/healing-haven.git
+   git clone https://github.com/Shiva-Rao-IT/Healing-Haven.git
    cd healing-haven/server
 
 2. Install dependencies
