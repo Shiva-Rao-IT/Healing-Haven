@@ -78,7 +78,7 @@ Before running the project, make sure to configure the following in your server.
 ---
 
 ## 📸 Screenshots
-![image](https://github.com/user-attachments/assets/a5728494-75b0-4865-8695-85af1ff97936)
+![image](https://github.com/user-attachments/assets/b8107e61-9732-4c5d-aa7c-50bbb13030e0)
 ![image](https://github.com/user-attachments/assets/ca274dc9-bc71-4c51-bd10-6bc389e0156e)
 ![image](https://github.com/user-attachments/assets/a9cb8068-22c8-4452-bd43-994fd5e6ce94)
 ![image](https://github.com/user-attachments/assets/66689f4d-9391-4199-99d9-a192a859aab7)
