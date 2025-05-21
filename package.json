@@ -27,8 +27,8 @@
     "socket.io-client": "^4.8.1"
   },
   "scripts": {
-    "start": "node node_modules/@craco/craco/bin/craco.js start",
-    "build": "node node_modules/@craco/craco/bin/craco.js build",
+    "start": "craco start",
+    "build": "craco build",
     "test": "craco test --env=jsdom",
     "eject": "craco eject"
   },
